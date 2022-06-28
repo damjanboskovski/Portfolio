@@ -110,9 +110,6 @@
     .social{
         padding-top: 14px;
     }
-}
-
-@media screen and (max-width: 375px){
     .main .imgwrap img{
         width: 100px;
     }
@@ -128,10 +125,15 @@
     .textBox a{
         font-size: 14px;
     }
+
+    .social{
+        padding-bottom: 180px;
+    }
 }
 
+
 @media only screen 
-and (min-device-width: 768px) 
+and (min-device-width: 600px) 
 and (max-device-width: 1024px) 
 and (-webkit-min-device-pixel-ratio: 1) {
 }
