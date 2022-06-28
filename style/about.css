@@ -1,0 +1,137 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.imgwrap img{
+    user-select: none;
+    margin-top: 40px;
+    display: flex;
+    width: 200px;
+    clip-path: circle(48% at 50% 50%);
+    animation: image 1s ease-in-out;
+}
+
+@keyframes image{
+    0%{
+        margin-left: -440px;
+    }
+}
+
+.wrapper{
+    user-select: none;
+    display: flex;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.wrapper h1{
+    font-size: 60px;
+    margin: 0;
+    line-height: 1;
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+}
+
+@keyframes text{
+    0%{
+        background-position: 0% 100%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
+
+.textBox{
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.textBox .text{
+    font-weight: 100;
+    width: 80%;
+}
+
+.textBox .text a{
+    text-decoration: none;
+    color: rgb(74, 77, 255);
+}
+
+.textBox .text a:hover{
+    color: rgb(92, 95, 255);
+}
+
+.textBox .text .mail{
+    color: rgb(74, 77, 255);
+    font-weight: 500;
+}
+
+.social{
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social .instaimg img{
+    width: 30px;
+}
+
+.social .faceimg img{
+    width: 30px;
+}
+
+@media screen and (max-width: 600px){
+    .main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+    .wrapper{
+        padding: 0;
+        margin: 0;
+    }
+    .social{
+        padding-top: 14px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .main .imgwrap img{
+        width: 100px;
+    }
+    .main .wrapper h1{
+        font-size: 36px;
+    }
+
+    .textBox{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+
+    .textBox a{
+        font-size: 14px;
+    }
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+}
