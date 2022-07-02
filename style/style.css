@@ -50,6 +50,9 @@ header{
     .nav{
         gap: 0;
     }
+    footer{
+        position:relative;
+    }
 }
 
 @media only screen 
