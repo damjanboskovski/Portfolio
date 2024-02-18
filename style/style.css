@@ -62,7 +62,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 
 footer{
-    position: fixed;
     z-index: 999;
     margin-top: 29px;
     padding-top: 10px;
